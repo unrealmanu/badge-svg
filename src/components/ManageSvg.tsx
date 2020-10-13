@@ -80,7 +80,7 @@ const generateImage$ = (): Observable<any> => {
       ctx.drawImage(img, 0, 0);
 
       const png = canvas.toDataURL("image/png");
-      pngContainer.innerHTML = `<img src="${png}"/>`;
+      pngContainer.innerHTML = `<img style="width:100%" src="${png}"/>`;
 
       const downloadLink = document.createElement("a");
       downloadLink.setAttribute("id", "downloadImage");
